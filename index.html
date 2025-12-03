@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HamroShop</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./src/style.css">
+    <!-- Font Family -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- CDN Link Booktstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <!-- CDN link Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+      
+</head>
+<body>
+
+<!-- Promo Banner -->
+  <header id="home" class="alert alert-dismissible text-center bg-danger text-light m-0 p-2">
+    <span class="promo">Black Day Sale is Live Now ! Limited Time Offer: Flat 20% OFF Today!</span>
+    <button class="btn-close p-2 mt-1" data-bs-dismiss="alert"></button>
+  </header>
+<!-- Navbar - Header Section -->
+  <nav class="container-fluid navbar px-4 py-2 d-flex align-items-center justify-content-between border-bottom position-sticky top-0 bg-light z-3">
+    <div class="d-flex align-items-center justify-content-center">
+      <span class="logo">Hamro</span>
+      <span class="logo-shop">Shop</span>
+    </div>
+    <ul class="nav-item d-flex list-unstyled m-0 gap-4">
+        <li><a href="">Home</a></li>
+        <li><a href="">Shop</a></li>
+        <li><a href="">New Arrivals</a></li>
+        <li><a href="">Sale</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
+    <div class="navbar-search d-flex align-items-center gap-3">
+      <div class="input-group">
+        <input class=" form-control" type="text" placeholder="Search">
+        <button class="btn btn-warning bi bi-search input-group-text"></button>
+      </div>
+      <button class="navbar-login rounded-pill px-2 d-flex gap-2">
+        <span class="bi bi-person-circle"></span>
+        <span>Login</span>
+      </button>
+      <button class="btn btn-danger position-relative">
+        <span class="bi bi-cart4"></span>
+        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark">
+          5+
+        </span>
+      </button>
+    </div>
+  </nav>
+
+<!-- Hero Section Carousel -->
+  <div id="carousel-control" class="carousel slide py-1" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="3000">
+        <img class="img-fluid" src="./public/images/hero1.webp" alt="">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img class="img-fluid" src="./public/images/hero2.webp" alt="">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img class="img-fluid" src="./public/images/hero3.webp" alt="">
+      </div>
+      <div class="carousel-item" data-bs-interval="3000">
+        <img class="img-fluid" src="./public/images/hero4.webp" alt="">
+      </div>
+      <button class="carousel-control-prev" data-bs-slide="prev" data-ba-target="#carousel-control">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" data-bs-slide="next" data-ba-target="#carousel-control">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+    <div class="carousel-indicators">
+      <button data-bs-target="#carousel-control" data-bs-slide-to="0" class="active"></button>
+      <button data-bs-target="#carousel-control" data-bs-slide-to="1"></button>
+      <button data-bs-target="#carousel-control" data-bs-slide-to="2"></button>
+      <button data-bs-target="#carousel-control" data-bs-slide-to="3"></button>
+    </div>
+  </div>
+
+<!-- Shop By Category Section -->
+  <section class="py-5 px-3 px-md-5" style="background: url(./public/images/back1.jpg); background-size: cover; background-position: center;">
+  <p class="h3 fw-bold text-center text-md-start">Shop By Category</p>
+
+  <div class="row mt-1 g-4 justify-content-center">
+
+    <!-- Category Item -->
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+      <div class="category-card card h-100 text-center overflow-hidden">
+        <img src="./public/images/clothes.png" class="w-100" alt="">
+        <div class="card-footer p-2">
+          <p class="m-0">Fashion & Apparel</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+      <div class="category-card card h-100 text-center overflow-hidden">
+        <img src="./public/images/cosmetic.png" class="w-100" alt="">
+        <div class="card-footer p-2">
+          <p class="m-0">Beauty & Personal Care</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+      <div class="category-card card h-100 text-center overflow-hidden">
+        <img src="./public/images/ff9b0c81-a7fe-4126-aa41-67c4fbf4a9d2.png" class="w-100" alt="">
+        <div class="card-footer p-2">
+          <p class="m-0">Electronics</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+      <div class="category-card card h-100 text-center overflow-hidden">
+        <img src="./public/images/grocery.png" class="w-100" alt="">
+        <div class="card-footer p-2">
+          <p class="m-0">Groceries & Food</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+      <div class="category-card card h-100 text-center overflow-hidden">
+        <img src="./public/images/sport.png" class="w-100" alt="">
+        <div class="card-footer p-2">
+          <p class="m-0">Sports & Outdoors</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+      <div class="category-card card h-100 text-center overflow-hidden">
+        <img src="./public/images/books.png" class="w-100" alt="">
+        <div class="card-footer p-2">
+          <p class="m-0">Books, Toys & Hobbies</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  </section>
+
+<!-- Dont Miss THis Section -->
+<section class="p-5">
+  <div class="text-center py-3">
+    <p class="text-danger">CURATED FOR YOU</p>
+    <p class="h2 fw-bold">Don't Miss These</p>
+  </div>
+  <div class="row gy-2">
+    <!-- card 1 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card dontmiss-card">
+        <div class="card-body m-0 p-0">
+          <img src="./public/images/dontmiss1.png" class="card-img-top" alt="">
+          <div class="p-3">
+            <p class="m-0">Urban Rider Jacket</p>
+            <p class="fw-bold">$220.00</p>
+            <button class="btn btn-danger w-100">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- card 2 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card dontmiss-card">
+        <div class="card-body m-0 p-0">
+          <img src="./public/images/dontmiss2.png" class="card-img-top" alt="">
+          <div class="p-3">
+            <p class="m-0">Edison Desk Lamp</p>
+            <p class="fw-bold">$85.00</p>
+            <button class="btn btn-danger w-100">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- card 3 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card dontmiss-card">
+        <div class="card-body m-0 p-0">
+          <img src="./public/images/dontmiss4.png" class="card-img-top" alt="">
+          <div class="p-3">
+            <p class="m-0">Retro Sound Headphones</p>
+            <p class="fw-bold">$150.00</p>
+            <button class="btn btn-danger w-100">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- card 4 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card dontmiss-card">
+        <div class="card-body m-0 p-0 ">
+          <img src="./public/images/dontmiss3.png" class="card-img-top" alt="">
+          <div class="p-3">
+            <p class="m-0">Ceramic Sage Pot</p>
+            <p class="fw-bold">$45.00</p>
+            <button class="btn btn-danger w-100">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Products  Section -->
+  <section class="py-5 px-3 px-md-5" style="background: url(./public/images/back3.jpg); background-position: center; background-size: cover;">
+  <p class="h3 fw-bold text-center text-md-start text-white">Featured Products</p>
+
+  <div class="row mt-4 g-4 justify-content-center">
+
+    <!-- Product 1 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="featured-card card h-100 text-center overflow-hidden">
+        <img src="./public/images/featured1.png" class="w-100" alt="">
+        <div class="p-3">
+          <p class="m-0 fs-5">Classic Trench Coat</p>
+          <p class="m-0 text-muted">Women's Outerwear</p>
+          <p class="fs-4 fw-bold mt-2">&#8377; 2,999.99</p>
+          <button class="btn w-100 featured-btn">Buy Now</button>
+        </div>
+        
+        
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="featured-card card h-100 text-center overflow-hidden">
+        <img src="./public/images/featured2.png" class="w-100" alt="">
+        <div class="p-3">
+          <p class="m-0 fs-5">Denim Trucker Jacket</p>
+          <p class="m-0 text-muted">Men's Outerwear</p>
+          <p class="fs-4 fw-bold mt-2">&#8377; 4,599.00</p>
+          <button class="btn w-100 featured-btn">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="featured-card card h-100 text-center overflow-hidden">
+        <img src="./public/images/featured3.png" class="w-100" alt="">
+        <div class="p-3">
+          <p class="m-0 fs-5">Leather Commuter Backpack</p>
+          <p class="m-0 text-muted">Accessories</p>
+          <p class="fs-4 fw-bold mt-2">&#8377; 6,999.49</p>
+          <button class="btn w-100 featured-btn">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="featured-card card h-100 text-center overflow-hidden">
+        <img src="./public/images/featured4.png" class="w-100" alt="">
+        <div class="p-3">
+          <p class="m-0 fs-5">Stylish Queen Brand</p>
+          <p class="m-0 text-muted">Girls Top Choice</p>
+          <p class="fs-4 fw-bold mt-2">&#8377; 4,899.50</p>
+          <button class="btn w-100 featured-btn">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Collections Section -->
+<section class=" container py-5">
+  <div class="row gy-3">
+    <div class="col-12 col-sm-6 col-md-4">
+      <div class="card border-0 shadow p-3 rounded-5">
+        <div class="card-body m-0 p-0">
+          <img class="card-img-top rounded-4" src="./public/images/collection1.png" alt="" height="200" style="object-fit: cover; background-position: center;">
+          <div class="my-4">
+            <p class="m-0 fs-6 fw-semibold">Summer Collection - 20% Off</p>
+            <p style="font-size: 13px; color: gray;">Discover vibrants Styles for the new season.</p>
+            <button class="btn btn-danger w-100 rounded-pill">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4">
+      <div class="card border-0 shadow p-3 rounded-4">
+        <div class="card-body m-0 p-0">
+          <img class="card-img-top rounded-4" src="./public/images/collection2.png" alt="" height="200" style="object-fit: cover; background-position: center;">
+          <div class="my-4">
+            <p class="m-0 fs-6 fw-semibold">Explore The Latest Arrivals</p>
+            <p style="font-size: 13px; color: gray;">Update your wardrobe with our newest pieces.</p>
+            <button class="btn btn-danger w-100 rounded-pill">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4">
+      <div class="card border-0 shadow p-3 rounded-4">
+        <div class="card-body m-0 p-0">
+          <img class="card-img-top rounded-4" src="./public/images/collection3.png" alt="" height="200" style="object-fit: cover; background-position: center;">
+          <div class="my-4">
+            <p class="m-0 fs-6 fw-semibold">Free Shipping On All Orders</p>
+            <p style="font-size: 13px; color: gray;">Get your favorites delivered to your door, on us.</p>
+            <button class="btn btn-danger w-100 rounded-pill">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Total Products collection -->
+<section class="container-fluid py-5" style="background: url(./public/images/back4.jpg); object-fit: contain;">
+  <p class="h2 fw-bold">Products Collections</p>
+  <div class="row gy-3 mt-3 products-links">
+    <div class="col-12 col-sm-4 col-md-3">
+      <div class="card border-0 shadow" role="button">
+        <div class="card-body">
+          <img src="./public/images/p1.png" class="card-img-top rounded-4" alt="">
+          <div class="mt-3">
+            <p class="m-0">Classic Black T-Shirt</p>
+            <p class="fw-bold">&#8377; 25.00 </p>
+            <div class="d-flex justify-content-between">
+              <a href="" class="btn btn-danger">Buy Now</a>
+              <a href="" class="btn btn-warning">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-4 col-md-3">
+      <div class="card border-0 shadow" role="button">
+        <div class="card-body">
+          <img src="./public/images/p2.png" class="card-img-top rounded-4" alt="">
+          <div class="mt-3">
+            <p class="m-0">Denim Skinney Jeans</p>
+            <p class="fw-bold">&#8377; 1,250.00 </p>
+            <div class="d-flex justify-content-between">
+              <a href="" class="btn btn-danger">Buy Now</a>
+              <a href="" class="btn btn-warning">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-12 col-sm-4 col-md-3">
+      <div class="card border-0 shadow" role="button">
+        <div class="card-body">
+          <img src="./public/images/p3.png" class="card-img-top rounded-4" alt="">
+          <div class="mt-3">
+            <p class="m-0">White Leather Shoes</p>
+            <p class="fw-bold">&#8377; 2,549.00 </p>
+            <div class="d-flex justify-content-between">
+              <a href="" class="btn btn-danger">Buy Now</a>
+              <a href="" class="btn btn-warning">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-12 col-sm-4 col-md-3">
+      <div class="card border-0 shadow" role="button">
+        <div class="card-body">
+          <img src="./public/images/p4.png" class="card-img-top rounded-4" alt="">
+          <div class="mt-3">
+            <p class="m-0">Floral Sundress</p>
+            <p class="fw-bold">&#8377; 999.00 </p>
+            <div class="d-flex justify-content-between">
+              <a href="" class="btn btn-danger">Buy Now</a>
+              <a href="" class="btn btn-warning">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-4 col-md-3">
+      <div class="card border-0 shadow" role="button">
+        <div class="card-body">
+          <img src="./public/images/p5.png" class="card-img-top rounded-4" alt="">
+          <div class="mt-3">
+            <p class="m-0">Men's Casual Blazer</p>
+            <p class="fw-bold">&#8377; 3,200.00 </p>
+            <div class="d-flex justify-content-between">
+              <a href="" class="btn btn-danger">Buy Now</a>
+              <a href="" class="btn btn-warning">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-4 col-md-3">
+      <div class="card border-0 shadow" role="button">
+        <div class="card-body">
+          <img src="./public/images/p6.png" class="card-img-top rounded-4" alt="">
+          <div class="mt-3">
+            <p class="m-0">Striped Crewneck Sweater</p>
+            <p class="fw-bold">&#8377; 2,250.00 </p>
+            <div class="d-flex justify-content-between">
+              <a href="" class="btn btn-danger">Buy Now</a>
+              <a href="" class="btn btn-warning">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-12 col-sm-4 col-md-3">
+      <div class="card border-0 shadow" role="button">
+        <div class="card-body">
+          <img src="./public/images/p7.png" class="card-img-top rounded-4" alt="">
+          <div class="mt-3">
+            <p class="m-0">Canvae Tote Bag</p>
+            <p class="fw-bold">&#8377; 1,549.00 </p>
+            <div class="d-flex justify-content-between">
+              <a href="" class="btn btn-danger">Buy Now</a>
+              <a href="" class="btn btn-warning">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-12 col-sm-4 col-md-3">
+      <div class="card border-0 shadow" role="button">
+        <div class="card-body">
+          <img src="./public/images/p8.png" class="card-img-top rounded-4" alt="">
+          <div class="mt-3">
+            <p class="m-0">Aviator Sunglasses</p>
+            <p class="fw-bold">&#8377; 699.00 </p>
+            <div class="d-flex justify-content-between">
+              <a href="" class="btn btn-danger">Buy Now</a>
+              <a href="" class="btn btn-warning">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-4 col-md-3">
+      <div class="card border-0 shadow" role="button">
+        <div class="card-body">
+          <img src="./public/images/p9.png" class="card-img-top rounded-4" alt="">
+          <div class="mt-3">
+            <p class="m-0">Morden Wristwatch</p>
+            <p class="fw-bold">&#8377; 1,250.00 </p>
+            <div class="d-flex justify-content-between">
+              <a href="" class="btn btn-danger">Buy Now</a>
+              <a href="" class="btn btn-warning">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-4 col-md-3">
+      <div class="card border-0 shadow" role="button">
+        <div class="card-body">
+          <img src="./public/images/p10.png" class="card-img-top rounded-4" alt="">
+          <div class="mt-3">
+            <p class="m-0">Silk Scarf</p>
+            <p class="fw-bold">&#8377; 250.00 </p>
+            <div class="d-flex justify-content-between">
+              <a href="" class="btn btn-danger">Buy Now</a>
+              <a href="" class="btn btn-warning">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-12 col-sm-4 col-md-3">
+      <div class="card border-0 shadow" role="button">
+        <div class="card-body">
+          <img src="./public/images/p11.png" class="card-img-top rounded-4" alt="">
+          <div class="mt-3">
+            <p class="m-0">Leather Ankle Boot</p>
+            <p class="fw-bold">&#8377; 1,849.00 </p>
+            <div class="d-flex justify-content-between">
+              <a href="" class="btn btn-danger">Buy Now</a>
+              <a href="" class="btn btn-warning">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-12 col-sm-4 col-md-3">
+      <div class="card border-0 shadow" role="button">
+        <div class="card-body">
+          <img src="./public/images/p12.png" class="card-img-top rounded-4" alt="">
+          <div class="mt-3">
+            <p class="m-0">Slim-fit Chinos</p>
+            <p class="fw-bold">&#8377; 999.00 </p>
+            <div class="d-flex justify-content-between">
+              <a href="" class="btn btn-danger">Buy Now</a>
+              <a href="" class="btn btn-warning">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- See personalized recommendations Section -->
+<section class="container-fluid">
+  <hr>
+  <div class="d-flex  align-items-center flex-column gap-2 justify-content-center">
+    <p class="m-0">See personalized recommendations</p>
+    <button class="btn btn-warning rounded-pill px-4">Sign in</button>
+    <p class="m-0" style="font-size: 14px;">New customer? <a href="">Start here</a></p>
+  </div>
+  <hr>
+</section>
+<div class="text-center py-3" style="background: rgba(224, 224, 224, 0.274);" ><a href="#home" class="text-decoration-none" style="color: black; font-size: 18px; font-weight: 600; ">Back to top <span class="bi bi-caret-up-fill"></span></a></div>
+
+ <!-- Footer -->
+<footer class="p-4" style="background: rgba(54, 54, 54, 0.274);">
+  <div class="container-fluid">
+    <div class="row gy-4 gap-lg-2">
+
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="d-flex align-items-center mb-2">
+          <span class="logo fs-3 fw-bold">Hamro</span>
+          <span class="logo-shop fs-3 fw-bold ms-1">Shop</span>
+        </div>
+        <p>Your one-stop destination for the latest fashion trends. Quality clothing for everyone.</p>
+        <p class="fw-semibold mb-1">Follow Us</p>
+        <div class="d-flex gap-3 fs-4">
+          <i class="footer-icon bi bi-instagram"></i>
+          <i class="footer-icon bi bi-facebook"></i>
+          <i class="footer-icon bi bi-telegram"></i>
+          <i class="footer-icon bi bi-twitter-x"></i>
+        </div>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <p class="fw-semibold">Join Our Newsletter</p>
+        <p>Be the first to know about new collections and exclusive offers.</p>
+        <div class="d-flex gap-2">
+          <input class="form-control" type="email" placeholder="Enter your email">
+          <button class="btn btn-danger">Subscribe</button>
+        </div>
+      </div>
+
+      <!-- Shop Links -->
+      <div class="col-12 col-sm-6 col-lg-2">
+        <p class="fw-semibold">Shop</p>
+        <ul class="footer-shop list-unstyled d-flex flex-column gap-2">
+          <li><a href="">Women, Men, Kids</a></li>
+          <li><a href="">Sports & Books</a></li>
+          <li><a href="">Beauty & Personal</a></li>
+          <li><a href="">Electronics</a></li>
+          <li><a href="">Groceries & Food</a></li>
+        </ul>
+      </div>
+
+      <!-- Other Links -->
+      <div class="col-12 col-sm-6 col-lg-2">
+        <p class="fw-semibold">Links</p>
+        <ul class="footer-link list-unstyled d-flex flex-column gap-2">
+          <li><a href="">About Us</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">FAQ's</a></li>
+          <li><a href="">Returns</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <hr class="my-4">
+
+    <div class="text-center">
+      &copy; 2024 HamroShop, All Rights Reserved | Made with 💛 in India.
+    </div>
+  </div>
+</footer>
+
+<!-- CDN Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script> 
+</body>
+</html>
