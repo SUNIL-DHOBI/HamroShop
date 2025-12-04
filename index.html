@@ -58,8 +58,10 @@
   </nav>
 
 <!-- Hero Section Carousel -->
-  <div id="carousel-control" class="carousel slide py-1" data-bs-ride="carousel">
-    <div class="carousel-inner">
+
+
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="3000">
         <img class="img-fluid" src="./public/images/hero1.webp" alt="">
       </div>
@@ -72,20 +74,22 @@
       <div class="carousel-item" data-bs-interval="3000">
         <img class="img-fluid" src="./public/images/hero4.webp" alt="">
       </div>
-      <button class="carousel-control-prev" data-bs-slide="prev" data-ba-target="#carousel-control">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button class="carousel-control-next" data-bs-slide="next" data-ba-target="#carousel-control">
-        <span class="carousel-control-next-icon"></span>
-      </button>
-    </div>
-    <div class="carousel-indicators">
-      <button data-bs-target="#carousel-control" data-bs-slide-to="0" class="active"></button>
-      <button data-bs-target="#carousel-control" data-bs-slide-to="1"></button>
-      <button data-bs-target="#carousel-control" data-bs-slide-to="2"></button>
-      <button data-bs-target="#carousel-control" data-bs-slide-to="3"></button>
-    </div>
   </div>
+  <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleControls">
+    <span class="carousel-control-prev-icon" ></span>
+  </button>
+  <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleControls" >
+    <span class="carousel-control-next-icon" ></span>
+  </button>
+
+  <div class="carousel-indicators">
+      <button data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active"></button>
+      <button data-bs-target="#carouselExampleControls" data-bs-slide-to="1"></button>
+      <button data-bs-target="#carouselExampleControls" data-bs-slide-to="2"></button>
+      <button data-bs-target="#carouselExampleControls" data-bs-slide-to="3"></button>
+    </div>
+</div>
+
 
 <!-- Shop By Category Section -->
   <section class="py-5 px-3 px-md-5" style="background: url(./public/images/back1.jpg); background-size: cover; background-position: center;">

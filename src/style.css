@@ -41,7 +41,8 @@
     white-space: nowrap;
 }
 .nav-item a:hover{
-    color: rgb(121, 8, 8);
+    color: rgb(158, 6, 6);
+    border-bottom: 2px solid #dc3545;
 }
 .navbar-login{
     background: #dc3545;
@@ -107,7 +108,7 @@
 
 /* all prodect collection */
 .products-links a{
-   
+    border: none;
     font-weight: bold;
 }
 
